@@ -48,8 +48,8 @@ codec58 = rep(0,n) # dependence coefficient
 for (i in 1:n){
     for (j in 1:20){
     data2 = heart1[,c(i,58)]
-    data2[,1] = data2[,1] + max(abs(data2[,1])) * 0.000001 * rnorm(m)
-    data2[,2] = data2[,2] + max(abs(data2[,2])) * 0.000001 * rnorm(m)
+    data2[,1] = data2[,1] + max(abs(data2[,1])) * 0.000001 * rnorm(m) #rnorm的作用就是加随机噪声
+    data2[,2] = data2[,2] + max(abs(data2[,2])) * 0.000001 * rnorm(m) #rnorm的作用就是加随机噪声
     ce58[i] = ce58[i] + copent(data2)/20
   }
 
