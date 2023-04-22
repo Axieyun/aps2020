@@ -12,6 +12,7 @@ library(NNS) # Nonlinear Nonparametric Statistics
 library(subcopem2D) # supremum dependence
 library(EDMeasure) # Mutual Independence Measure
 library(FOCI) # Dependence Coefficient 
+library('TauStar')
 
 scan_heart_data <-function(filename1, nl = 0){
   data1 = scan(filename1, nlines = nl, what = c(as.list(rep(0,75)),list("")))
